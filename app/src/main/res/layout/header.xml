@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/date"
+        app:layout_constraintEnd_toStartOf="@+id/txtTimeText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtDateText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextClock
+        android:id="@+id/txtClockDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:format12Hour="dd/MM/yyyy"
+        android:format24Hour="dd/MM/yyyy"
+        android:timeZone="GMT-0500"
+        app:layout_constraintStart_toStartOf="@+id/txtDateText"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateText" />
+
+    <TextClock
+        android:id="@+id/txtClockTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:format12Hour="hh:mm aa"
+        android:format24Hour="kk:mm aa"
+        android:timeZone="GMT-0500"
+        app:layout_constraintEnd_toEndOf="@+id/txtTimeText"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimeText" />
+</android.support.constraint.ConstraintLayout>

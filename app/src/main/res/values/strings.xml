@@ -8,7 +8,7 @@
     <string name="action_sign_in_pin">Iniciar Sesion con PIN</string>
     <string name="action_sign_in_fingerprint">Iniciar Sesion con Huella</string>
     <string name="action_sign_in_short">Iniciar Sesion</string>
-    <string name="error_invalid_dni">El dni es invalido</string>
+    <string name="error_invalid_dni">El documento es invalido</string>
     <string name="error_invalid_password">El password es muy corto</string>
     <string name="error_incorrect_password">El password es incorrecto</string>
     <string name="error_field_required">Este campo es requerido</string>
@@ -21,4 +21,28 @@
     <string name="navigation_drawer_close">Cerrar ventana de navegacion</string>
 
     <string name="action_settings">Settings</string>
+    <string name="register_user">Registrar Nuevo Usuario</string>
+    <string name="register_gestor">Registrar Nuevo Gestor</string>
+    <string name="login_operator">Login de Operador</string>
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+    <string name="enter_fingerprint">Ingreso de Huella</string>
+    <string name="pin">PIN</string>
+    <string name="fingerprint">Huella</string>
+    <string name="main_menu">Menu de Administracion del Gestor</string>
+    <string name="enter_specific_finger">Ingreso de %1$s</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="validate_fingerprint">Verificar Huella</string>
+    <string name="second_title">Apoyo Social</string>
+    <string name="details">Nombre:Juan\nApellido Paterno:Perez\nApellido Materno:Chauca\nTelefono:99999999\nSaldo: S/.500
+
+    \n\n\n
+    Ultimas transacciones:\nAbono: S/.300\nRetiro: S/.10\nRetiro: S/.150</string>
+    <string name="small_details">Nombre:Juan\nApellido Paterno:Perez\nApellido Materno:Chauca\nTelefono:99999999\nSaldo: S/.500</string>
+    <string-array name="documents_array">
+        <item>DNI</item>
+        <item>Pasaporte</item>
+    </string-array>
 </resources>

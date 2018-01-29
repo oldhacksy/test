@@ -7,6 +7,8 @@ import com.novatronic.identidad_digital.R;
 
 public class FingerprintActivity extends AppCompatActivity {
 
+    public static final int FINGERPRINT_ID = 9543;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

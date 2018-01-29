@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.novatronic.digitalidentity.MainActivity">
+    tools:context="com.novatronic.identidad_digital.views.ui.main.MainActivity">
 
 
     <include
@@ -23,33 +23,55 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:text="@string/main_menu"
+        android:text="Menu de Apoyo Social"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textAppearance="?android:attr/textAppearanceLarge"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
-    <Button
-        android:id="@+id/btnUserRegister"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edtLoggedUser"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="@string/register_user"
-        style="@style/Widget.AppCompat.Button.Colored"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
     <Button
-        android:id="@+id/btnValidate"
+        android:id="@+id/btnDeposit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Realizar Abono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtLoggedUser" />
+
+    <Button
+        android:id="@+id/btnWithdraw"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Validar Cuenta"
+        android:text="Realizar Retiro" style="@style/Widget.AppCompat.Button.Colored"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeposit"
+        app:layout_constraintStart_toStartOf="@+id/btnDeposit"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeposit" />
+
+
+    <Button
+        android:id="@+id/btnLogout"
         style="@style/Widget.AppCompat.Button.Colored"
-        app:layout_constraintEnd_toEndOf="@+id/btnUserRegister"
-        app:layout_constraintStart_toStartOf="@+id/btnUserRegister"
-        app:layout_constraintTop_toBottomOf="@+id/btnUserRegister" />
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Cerrar Sesion"
+        app:layout_constraintEnd_toEndOf="@+id/btnWithdraw"
+        app:layout_constraintStart_toStartOf="@+id/btnWithdraw"
+        app:layout_constraintTop_toBottomOf="@+id/btnWithdraw" />
 </android.support.constraint.ConstraintLayout>
