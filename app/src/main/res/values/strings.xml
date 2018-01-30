@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Identidad  Digital</string>
+    <string name="subtitle_activity_login">Iniciar Sesion</string>
+    <string name="subtitle_activity_main">Iniciar Sesion</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Documento de Identidad</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_pin">Iniciar Sesion con PIN</string>
+    <string name="action_sign_in_fingerprint">Iniciar Sesion con Huella</string>
+    <string name="action_sign_in_short">Iniciar Sesion</string>
+    <string name="error_invalid_dni">El dni es invalido</string>
+    <string name="error_invalid_password">El password es muy corto</string>
+    <string name="error_incorrect_password">El password es incorrecto</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="navigation_drawer_open">Abrir barra de navegacion</string>
+    <string name="navigation_drawer_close">Cerrar ventana de navegacion</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
